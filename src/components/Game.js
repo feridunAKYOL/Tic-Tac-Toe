@@ -40,7 +40,7 @@ const Game = () => {
     <>
       <Board squares={history[stepNumber]} onClick={handleClick} />
       <div className={'board container'}>
-       <h3 className ={'text-danger'}> {winner ? 'Winner: ' + winner : 'Next Player: ' + (xIsNext ? 'X' : 'O')} </h3>
+        <h3 style={winner === 'X' ? { backgroundColor: 'red', color: 'white' } : winner === 'O' ? {backgroundColor:'blue' , color:'white'}:{}} > {winner ? 'Winner: ' + winner : 'Next Player: ' + (xIsNext ? 'X' : 'O')} </h3>
         <p>{renderMoves()}</p>
       </div>
     </>
