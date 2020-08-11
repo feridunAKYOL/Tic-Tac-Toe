@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/feridunAKYOL/Tic-Tac-Toe/precache-manifest.d5d0cc5af51be8fda891f2796e9c8ce1.js"
+  "/feridunAKYOL/Tic-Tac-Toe/precache-manifest.aec3cf2dc6df921dda1a08d658d23176.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -35,5 +35,5 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/feridunAKYOL/Tic-Tac-Toe/index.html"), {
   
-  blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
+  blacklist: [/^\/_/,/\/[^\/?]+\.[^\/]+$/],
 });
